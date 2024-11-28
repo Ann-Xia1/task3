@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = Array([1,2,[3,4,5,[6,7]],[8,9],[10]]);
+        console.log('数组:' + arr);
+        for (var m = 0 ; m < arr.length; m++) {
+            var temp = arr[m];
+            if (typeof temp === 'number') {
+                console.log(temp + ','); //是数字时打印出来
+            } else { //不是数字时将所有元素添加到数组末尾
+                for (var n = 0; n < temp.length; n++) {
+                    arr.push(temp[n]);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

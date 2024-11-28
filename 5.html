@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [1,2,12,23,35,33,44,21,3,4,4];
+            sum = 0;
+        for (var i = 0 ; i < arr.length ; i++) {
+            if (arr[i] % 2 === 0) {
+                sum += arr[i] ;
+                console.log (sum);
+            }
+        }
+        document.write('数组：' + arr + '<br>');
+        document.write('数组偶数和：' + sum);
+    </script>
+</body>
+</html>

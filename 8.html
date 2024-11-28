@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [12,23,43,54,35,65,11,22,44,89,65,49,34];
+            n = Number(prompt('输入需要检索的目标值'));
+            count = 0;
+        console.log(arr);
+        for (var i = 0 ; i < arr.length ; i++) {
+            if (n === arr[i]) {
+                alert (i);
+                count = 1;
+            }
+        }
+        if (count === 0) {
+            alert('-1');
+        }
+    </script>
+</body>
+</html>

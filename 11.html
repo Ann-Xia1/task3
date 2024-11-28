@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var target = Number(prompt('输入目标target值'));
+        var count = 0;
+        var arr = [11,22,33,12,45,67,98,6,4,9,10,34,1,2,3,4,5,6,7,8,9,10];
+        for (var i = 0 ; i < arr.length/2 ; i++) {
+            for (j = arr.length/2 ; j < arr.length ; j++) {
+                if (arr[i] + arr[j] === target && i != j) {
+                    document.write ('[' + i + ',' + j + ']');
+                    count = 1;
+                    break;
+                }
+            }
+        }
+        if (count != 1) {
+            document.write ('Null');
+        }
+    </script>
+</body>
+</html>
